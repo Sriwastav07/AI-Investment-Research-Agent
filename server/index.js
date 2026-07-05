@@ -13,7 +13,7 @@ app.use(express.json());
 app.use(cors({
   origin: [
     "http://localhost:5173",
-    "http://ai-investment-research-agent-r6dfabtt8.vercel.app"
+    "https://ai-investment-research-agent-tau-one.vercel.app"
   ],
   credentials: true
 }));
