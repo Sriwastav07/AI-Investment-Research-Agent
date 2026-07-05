@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import axios from "axios";
 import api from "../services/api";
 import {
   Download,
@@ -78,7 +77,7 @@ const Report = () => {
     try {
       const token = localStorage.getItem("token");
 
-      const response = await axios.get(
+      const response = await api.get(
         `/api/research/report/${id}/pdf`,
         {
           headers: {
