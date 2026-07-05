@@ -13,10 +13,11 @@ app.use(express.json());
 app.use(cors({
   origin: [
     "http://localhost:5173",
-    "https://your-frontend.vercel.app"
+    "http://ai-investment-research-agent-r6dfabtt8.vercel.app"
   ],
   credentials: true
 }));
+
 app.use(helmet({
   crossOriginResourcePolicy: false,
 }));
