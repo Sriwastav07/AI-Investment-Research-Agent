@@ -5,6 +5,7 @@ import { Loader2, AlertCircle, TrendingUp } from 'lucide-react';
 import Navbar from '../components/Navbar';
 import Timeline from '../components/Timeline';
 import GlassCard from '../components/GlassCard';
+import api from "../services/api";
 
 const Research = () => {
   const [searchParams] = useSearchParams();
@@ -29,7 +30,7 @@ const Research = () => {
     }
 
     const token = localStorage.getItem('token');
-    const url = `http://localhost:5000/api/research/stream?companyName=${encodeURIComponent(companyName)}`;
+    const url = `/api/research/stream?companyName=${encodeURIComponent(companyName)}`;
     
     const eventSource = new EventSource(`${url}&x-auth-token=${token}`);
     eventSourceRef.current = eventSource;

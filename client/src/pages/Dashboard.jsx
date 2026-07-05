@@ -5,6 +5,7 @@ import axios from 'axios';
 import { Search, History, Star, TrendingUp, ArrowUpRight, BarChart2 } from 'lucide-react';
 import Navbar from '../components/Navbar';
 import GlassCard from '../components/GlassCard';
+import api from "../services/api";
 
 const Dashboard = () => {
   const [history, setHistory] = useState([]);
@@ -16,7 +17,7 @@ const Dashboard = () => {
     const fetchHistory = async () => {
       try {
         const token = localStorage.getItem('token');
-        const res = await axios.get('http://localhost:5000/api/research/history', {
+        const res = await api.get('/api/research/history', {
           headers: { 'x-auth-token': token }
         });
         setHistory(res.data);

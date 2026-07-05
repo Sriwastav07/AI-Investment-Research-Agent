@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import axios from "axios";
+import api from "../services/api";
 import {
   Download,
   TrendingUp,
@@ -51,8 +52,8 @@ const Report = () => {
       try {
         const token = localStorage.getItem("token");
 
-        const res = await axios.get(
-          `http://localhost:5000/api/research/report/${id}`,
+        const res = await api.get(
+          `/api/research/report/${id}`,
           {
             headers: {
               "x-auth-token": token,
@@ -78,7 +79,7 @@ const Report = () => {
       const token = localStorage.getItem("token");
 
       const response = await axios.get(
-        `http://localhost:5000/api/research/report/${id}/pdf`,
+        `/api/research/report/${id}/pdf`,
         {
           headers: {
             "x-auth-token": token,
