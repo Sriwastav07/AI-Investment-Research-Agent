@@ -321,6 +321,11 @@ Gemini is used in the final application exclusively for generating investment re
 
 ![PDF](Pdf_Report.pdf)
 
+# Live Demo link
+ai-investment-research-agent-tau-one.vercel.app
+
+# GitHub repository link
+https://github.com/Sriwastav07/AI-Investment-Research-Agent.git
 
 # License
 This project was developed as part of the InsideIIM × Altuni AI Labs AI Product Intern Take-Home Assignment.
