@@ -32,21 +32,21 @@ JWT Authentication
 
 # Tech Stack
 ## Frontend
-React.js
-Tailwind CSS
-Framer Motion
-Axios
+React.js,
+Tailwind CSS,
+Framer Motion,
+Axios,
 Recharts
 ## Backend
-Node.js
-Express.js
-MongoDB
-Mongoose
+Node.js,
+Express.js,
+MongoDB,
+Mongoose,
 ## AI
-LangChain.js
+LangChain.js,
 Google Gemini 2.5 Flash
 ## External APIs
-Finnhub API
+Finnhub API,
 GNews API
 
 # Architecture
@@ -114,13 +114,13 @@ using Finnhub.
 
 Retrieves
 
-PE Ratio
-EPS
-ROE
-ROA
-Cash Flow
-Current Ratio
-Debt to Equity
+PE Ratio,
+EPS,
+ROE,
+ROA,
+Cash Flow,
+Current Ratio,
+Debt to Equity,
 Operating Margin
 
 from Finnhub.
@@ -146,12 +146,12 @@ Evaluates investment risks using predefined financial and business rules.
 Gemini receives all structured research data and generates:
 
 INVEST / HOLD / PASS
-Confidence Score
-Investment Horizon
-Risk Level
-SWOT Analysis
-Pros
-Cons
+Confidence Score,
+Investment Horizon,
+Risk Level,
+SWOT Analysis,
+Pros,
+Cons,
 Final Reasoning
 
 Only this final reasoning step uses the LLM.
